@@ -1,0 +1,26 @@
+### Docanalyzer.ai Gemini Prompt
+
+I want you to find specific values from given points that i will help you identify and provide me with these values here Vulnerability title will be in the cell right next to cell containing FINDING Vulnerable URL will be in the cell right next to cell containing VULNERABLE URL Severity will be in the cell right below to cell containing Risk Rating CWE will be in the cell right below to cell containing CWE/CVE Remediations will be in the cell right below to cell containing RECOMMENDATION Do keep in mind that total findings are 30 and provide me the result in array format add an incremental number to it as well in the front
+
+### Script to generate excel sheet
+
+import pandas as pd
+
+# Define your data as a list of dictionaries
+data = [
+   { " <VULNs Here in Json Format "> }
+]
+
+# Create a DataFrame
+df = pd.DataFrame(data)
+
+# Write the DataFrame to an Excel file
+output_file = "vulnerability_report.xlsx"
+df.to_excel(output_file, index=False, engine='openpyxl')
+
+print(f"Excel file '{output_file}' created successfully.")
+
+
+### For Reference From CWE ID
+
+cat ./CWE.txt | while read CWE; do echo "https://cwe.mitre.org/data/definitions/"$CWE".html"; done | tee out.txt
