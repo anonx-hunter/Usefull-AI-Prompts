@@ -1,6 +1,6 @@
 ### Docanalyzer.ai Gemini Prompt
 
-I want you to find specific values from given points that i will help you identify and provide me with these values here Vulnerability title will be in the cell right next to cell containing FINDING Vulnerable URL will be in the cell right next to cell containing VULNERABLE URL Severity will be in the cell right below to cell containing Risk Rating CWE will be in the cell right below to cell containing CWE/CVE Remediations will be in the cell right below to cell containing RECOMMENDATION Do keep in mind that total findings are 30 and provide me the result in array format add an incremental number to it as well in the front
+I want you to find specific values from given points that i will help you identify and provide me with these values here Vulnerability title will be in the cell right next to cell containing FINDING Vulnerable URL will be in the cell right next to cell containing VULNERABLE URL Severity will be in the cell right below to cell containing Risk Rating CWE will be in the cell right below to cell containing CWE/CVE Remediations will be in the cell right below to cell containing RECOMMENDATION Do keep in mind that total findings are 30 and provide me the result in json format add an incremental number to it as well in the front also include Reference URL for these CWE in the json. I only want Index, Vulnerability Title, Vulnerable URL, Severity, CWE, Remediations, Reference URL in my json 
 
 ### Script to generate excel sheet
 
